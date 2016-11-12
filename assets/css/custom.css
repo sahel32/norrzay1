@@ -29,7 +29,7 @@ body {
 }
 #page-inner {
     width:100%;
-    margin:10px 20px 10px 0px;
+    margin:10px 0px 10px 0px;
     background-color:#fff!important;
     padding:10px;
     min-height:1200px;
@@ -357,10 +357,16 @@ line-height: 1.428571429;
  
  @media(min-width:768px) {
      #page-wrapper{
-               margin: 0 0 0 260px;
+        margin: 0 260px 0 0; /* margin: 0 0 0 260px; original*/
         padding: 15px 30px;
         min-height: 1200px;
 		
+    }
+    .gap{
+        margin-top: 50px;
+    }
+    .gaps{
+        margin-top: 25px;
     }
 	
 	
@@ -376,4 +382,25 @@ line-height: 1.428571429;
    
 }
 
-
+/*Add more styles by Mortaza*/
+label{
+    padding-right: 8px;
+}
+.input-group[class*="col-"]{
+    float: right;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.btn{
+    margin-left: 5px;
+}
+.pagination{
+    margin: 0 0 0 0;
+    float: left;
+}
+.dataTables_filter{
+    float: left;
+}
+.entry{
+    padding-right: 0;
+}
