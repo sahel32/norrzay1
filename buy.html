@@ -169,7 +169,7 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                                         </div>
                                         <div class="col-md-6 form-group">
                                             <label>شرح و تفصیلات</label>
-                                            <textarea class="form-control" rows="1"></textarea>
+                                            <textarea class="form-control" rows="1" data-toggle="tooltip" title="نکات بیشتر را میتوانید در این قسمت ذکر کنید." data-placement="top"></textarea>
                                         </div>
                                         <div class="col-md-3 gaps">
                                         <button type="submit" class="btn btn-default pull-left">تائید</button>
@@ -195,6 +195,9 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
     <script src="assets/js/jquery.metisMenu.js"></script>
       <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
+    <script>
+        $("textarea").tooltip();
+    </script>
     
    
 </body>
