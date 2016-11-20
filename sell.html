@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Free Bootstrap Admin Template : Binary Admin</title>
 	<!-- BOOTSTRAP STYLES-->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.rtl.min.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
         <!-- CUSTOM STYLES-->
@@ -13,7 +13,6 @@
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
-
 <body>
     <div id="wrapper">
         <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
@@ -24,11 +23,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Binary admin</a> 
+                <a class="navbar-brand" href="index.html">مدیریت سیستم</a> 
             </div>
   <div style="color: white;
 padding: 15px 50px 5px 50px;
-float: right;
+float: left;
 font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="btn btn-danger square-btn-adjust">Logout</a> </div>
         </nav>   
            <!-- /. NAV TOP  -->
@@ -56,7 +55,7 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                         <a  href="table.html"><i class="fa fa-table fa-3x"></i> Table Examples</a>
                     </li>
                     <li  >
-                        <a class="active-menu"  href="form.html"><i class="fa fa-edit fa-3x"></i> Forms </a>
+                        <a  href="form.html"><i class="fa fa-edit fa-3x"></i> Forms </a>
                     </li>				
 					<li  >
                         <a   href="login.html"><i class="fa fa-bolt fa-3x"></i> Login</a>
@@ -93,7 +92,7 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                         </ul>
                       </li>  
                   <li  >
-                        <a   href="blank.html"><i class="fa fa-square-o fa-3x"></i> Blank Page</a>
+                        <a class="active-menu"  href="blank.html"><i class="fa fa-square-o fa-3x"></i> Blank Page</a>
                     </li>	
                 </ul>
                
@@ -105,109 +104,67 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                     <h2>Forms Page</h2>   
-                        <h5>Welcome Jhon Deo , Love to see you back. </h5>
+                     <h2>فروش</h2>   
+                        <h5>از این قسمت میتوانید تیل فروخته شده را وارد نمایید. </h5>
                        
                     </div>
                 </div>
                  <!-- /. ROW  -->
                  <hr />
-                <div class="row">
-                	<div class="col-md-12">
-
-                     <!--    Context Classes  -->
+                 <div class="row">
+                <div class="col-md-12">
+                    <!-- Form Elements -->
                     <div class="panel panel-default">
-                       
                         <div class="panel-heading">
-                            Context Classes
+                            فورم ثبت فروش
                         </div>
-                        
                         <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>factor code</th>
-                                            <th>amount/ton</th>
-                                            <th>seller</th>
-                                            <th>arrive date</th>
-                                            <th>name</th>
-   											<th>set permenent</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="danger">
-                                       
-                                            <td>2345</td>
-                                            <td>300</td>
-                                            <td>ali</td>
-      										<td>2017/1/1</td>
-                                            <td class="center">petrol</td>
-                                            <td><input type="checkbox" /></td>
-                                        
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form role="form">
 
-
+                                        <div class="col-md-3 form-group">
+                                            <label>تاریخ</label>
+                                            <input class="form-control" />
+                                        </div>
+                                        <div class="col-md-3 form-group">
+                                            <label>تناژ (وزن سمیر)</label>
+                                            <input class="form-control" />
+                                        </div>
+                                        <div class="col-md-3 form-group">
+                                            <label>درایور (راننده)</label>
+                                            <input class="form-control" />
+                                        </div>
+                                        <div class="col-md-3 form-group">
+                                            <label>ترانزیت (نمبر موتر)</label>
+                                            <input class="form-control" />
+                                        </div>
+                                        <div class="col-md-3 form-group">
+                                            <label>ناحیه بارگیری</label>
+                                            <input class="form-control" />
+                                        </div>
+                                        <div class="col-md-3 form-group">
+                                            <label>ناحیه تخلیه</label>
+                                            <input class="form-control" />
+                                        </div>
+                                        <div class="col-md-6 form-group">
+                                            <label>شرح و تفصیلات</label>
+                                            <textarea class="form-control" rows="1"></textarea>
+                                        </div>
+                                        <div class="col-md-offset-3 col-md-3 gaps">
+                                        <button type="submit" class="btn btn-default pull-left">تائید</button>
+                                        <button type="reset" class="btn btn-primary pull-left">تنظیم مجدد</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!--  end  Context Classes  -->
-
-
-   					</div>
+            </div>
              <!-- /. PAGE INNER  -->
-            	</div>
-
-            	<div class="row">
-                	<div class="col-md-6">
-
-
-                    
-                    <div class="form-group">
-                                            <label>car plate</label>
-                                            <input class="form-control" />
-                                            
-                                        </div>
-                                        
-                                             
-                    <div class="form-group">
-                                            <label>amount</label>
-                                            <input class="form-control" />
-                                            
-                                        </div>
-
-                                          <div class="form-group">
-                                            <label>price per/ton</label>
-                                            <input class="form-control" />
-                                            
-                                        </div>
-                            <div class="form-group">
-                                            <label>driver</label>
-                                            <select class="form-control">
-                                                <option>morteza</option>
-                                                <option>mohammad</option>
-                                     
-                                            </select>
-                                        </div>
-                              <div class="form-group">
-                                            <label>arrive date</label>
-                                            <input class="form-control" />
-                                            
-                                        </div>
-
-                                 <span class="form-group input-group-btn">
-        <button class="btn btn-default" type="button">add to permenant stock</button>
-      </span>
-
-                                      <span class="form-group input-group-btn">
-        <button class="btn btn-default" type="button">add more</button>
-      </span>
-                </div>
-            	</div>
-         <!-- /. PAGE WRAPPER  -->
         </div>
+         <!-- /. PAGE WRAPPER  -->
+    </div>
      <!-- /. WRAPPER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
