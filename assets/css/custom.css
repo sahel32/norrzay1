@@ -440,3 +440,23 @@ label{
     width: 35px;
     height: 35px;
 }
+.correct{
+    padding: 1px 10px;
+}
+.btn-correct{
+    padding: 0px 5px 0px 5px;
+    font-weight: bold;
+    line-height: 1.42857143;
+    font-size:14px;
+    color: #333;
+}
+.btn-correct, .btn-correct:hover, .btn-correct:active, .btn-correct:focus{
+    border: none;
+    background: #fff;
+    box-shadow: none;
+}
+.btn-correct.open .dropdown-toggle{
+    box-shadow: none;
+    background: none;
+    border: none;
+}
