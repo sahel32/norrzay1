@@ -29,7 +29,7 @@ body {
 }
 #page-inner {
     width:100%;
-    margin:10px 20px 10px 0px;
+    margin:10px 0px 10px 0px;
     background-color:#fff!important;
     padding:10px;
     min-height:1200px;
@@ -133,7 +133,35 @@ font-weight: 300;
 text-align: center;
 }
  .main-temp-back .text-temp {
-font-size: 40px;
+font-size: 25px;
+padding-top: 10px;
+}
+.stock{
+    background: #333;
+}
+.safebox{
+    background: #3c763d;
+}
+.reports{
+    background: #AF0000;
+}
+.backup{
+    background: #0078D7;
+}
+.buys{
+    background: #db0630;
+}
+.sells{
+    background: #4d3fb5;
+}
+.accounts{
+    background: #8702A8;
+}
+.debits{
+    background: #b94a00;
+}
+.credits{
+    background: #009688;
 }
 .back-dash {
     padding:20px;
@@ -357,10 +385,16 @@ line-height: 1.428571429;
  
  @media(min-width:768px) {
      #page-wrapper{
-               margin: 0 0 0 260px;
+        margin: 0 260px 0 0; /* margin: 0 0 0 260px; original*/
         padding: 15px 30px;
         min-height: 1200px;
 		
+    }
+    .gap{
+        margin-top: 50px;
+    }
+    .gaps{
+        margin-top: 25px;
     }
 	
 	
@@ -376,4 +410,53 @@ line-height: 1.428571429;
    
 }
 
+/*Add more styles by Mortaza*/
+label{
+    padding-right: 8px;
+}
+.input-group[class*="col-"]{
+    float: right;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.btn{
+    margin-left: 5px;
+}
+.pagination{
+    margin: 0 0 0 0;
+    float: left;
+}
+.dataTables_filter{
+    float: left;
+}
+.entry{
+    padding-right: 0;
+}
+.custom-select{
+    margin-top: -7px;
+}
 
+.sidebar-menu{
+    width: 35px;
+    height: 35px;
+}
+.correct{
+    padding: 1px 10px;
+}
+.btn-correct{
+    padding: 0px 5px 0px 5px;
+    font-weight: bold;
+    line-height: 1.42857143;
+    font-size:14px;
+    color: #333;
+}
+.btn-correct, .btn-correct:hover, .btn-correct:active, .btn-correct:focus{
+    border: none;
+    background: #fff;
+    box-shadow: none;
+}
+.btn-correct.open .dropdown-toggle{
+    box-shadow: none;
+    background: none;
+    border: none;
+}

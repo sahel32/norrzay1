@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Free Bootstrap Admin Template : Binary Admin</title>
 	<!-- BOOTSTRAP STYLES-->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.rtl.min.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
         <!-- CUSTOM STYLES-->
@@ -23,15 +23,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Binary admin</a> 
+                <a class="navbar-brand" href="index.html">مدیریت سیستم</a> 
             </div>
-  <div style="color: white;
-padding: 15px 50px 5px 50px;
-float: right;
-font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="btn btn-danger square-btn-adjust">Logout</a> </div>
+            <div style="color: white;
+            padding: 15px 50px 5px 50px;
+            float: left;
+            font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="btn btn-danger square-btn-adjust">Logout</a> </div>
         </nav>   
            <!-- /. NAV TOP  -->
-                <nav class="navbar-default navbar-side" role="navigation">
+        <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 				<li class="text-center">
@@ -55,7 +55,7 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                         <a  href="table.html"><i class="fa fa-table fa-3x"></i> Table Examples</a>
                     </li>
                     <li  >
-                        <a class="active-menu"  href="form.html"><i class="fa fa-edit fa-3x"></i> Forms </a>
+                        <a  href="form.html"><i class="fa fa-edit fa-3x"></i> Forms </a>
                     </li>				
 					<li  >
                         <a   href="login.html"><i class="fa fa-bolt fa-3x"></i> Login</a>
@@ -92,7 +92,7 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                         </ul>
                       </li>  
                   <li  >
-                        <a   href="blank.html"><i class="fa fa-square-o fa-3x"></i> Blank Page</a>
+                        <a class="active-menu"  href="blank.html"><i class="fa fa-square-o fa-3x"></i> Blank Page</a>
                     </li>	
                 </ul>
                
@@ -104,68 +104,68 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                     <h2>add temporary</h2>   
-                        <h5>add temporary oils </h5>
-                       
+                     <h2>لیست فروش</h2>   
+                        <h5>در جدول پایین شما میتوانید لیست فروش را مشاهده کنید.</h5>   
                     </div>
                 </div>
                  <!-- /. ROW  -->
                  <hr />
                 <div class="row">
-                	<div class="col-md-6">
-                	                    
-                    
-                    <div class="form-group">
-                                            <label>name</label>
-                                            <select class="form-control">
-                                                <option>petrol</option>
-                                                <option>desiel</option>
-                                     
-                                            </select>
-                                            
-                                        </div>
-                                        
-                                   <div class="form-group">
-                                            <label>amount</label>
-                                            <input class="form-control" />
-                                            
-                                        </div>                              
-
-                                          <div class="form-group">
-                                            <label>price per/ton</label>
-                                            <input class="form-control" />
-                                            
-                                        </div>
-                            <div class="form-group">
-                                            <label>seller</label>
-                                            <select class="form-control">
-                                                <option>ali</option>
-                                                <option>ahmad</option>
-                                     
-                                            </select>
-                                        </div>
-
-                                            <div class="form-group">
-                                            <label>province</label>
-                                            <input class="form-control" />
-                                            
-                                        </div>
-
-                              <div class="form-group">
-                                            <label>aproximte arrive date</label>
-                                            <input class="form-control" />
-                                            
-                                        </div>
-
-                                 <span class="form-group input-group-btn">
-        <button class="btn btn-default" type="button">add to stock</button>
-      </span>
+                    <div class="col-md-12">
+                        <!-- Advanced Tables -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                             لیست فروش
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th>کد</th>
+                                            <th>تاریخ</th>
+                                            <th>نام مشتری</th>
+                                            <th>تناژ (وزن سمیر)</th>
+                                            <th>نوع تیل</th>
+                                            <th>فی</th>
+                                            <th>درایور (راننده)</th>
+                                            <th>ترانزیت (نمبر موتر)</th>
+                                            <th>ناحیه بارگیری</th>
+                                            <th>ناحیه تخلیه</th>
+                                            <th>شرح و تفصیلات</th>
+                                            <th>تغییرات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd gradeX">
+                                            <td>Trident</td>
+                                            <td>Internet Explorer 4.0</td>
+                                            <td>Win 95+</td>
+                                            <td class="center">4</td>
+                                            <td class="center">X</td>
+                                            <td class="center">4</td>
+                                            <td class="center">X</td>
+                                            <td class="center">4</td>
+                                            <td class="center">4</td>
+                                            <td class="center">X</td>
+                                            <td class="center">4</td>
+                                            <td class="center">X</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--End Advanced Tables -->
+                    </div>
                 </div>
-   				</div>
-             <!-- /. PAGE INNER  -->
+                 <!-- /. ROW  -->
             </div>
-         <!-- /. PAGE WRAPPER  -->
+             <!-- /. PAGE INNER  -->
         </div>
+         <!-- /. PAGE WRAPPER  -->
+    </div>
      <!-- /. WRAPPER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
@@ -174,8 +174,17 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- METISMENU SCRIPTS -->
     <script src="assets/js/jquery.metisMenu.js"></script>
-      <!-- CUSTOM SCRIPTS -->
+     <!-- DATA TABLE SCRIPTS -->
+    <script src="assets/js/dataTables/jquery.dataTables.js"></script>
+    <script src="assets/js/dataTables/dataTables.bootstrap.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#dataTables-example').dataTable();
+            });
+    </script>
+     <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
+    
     
    
 </body>

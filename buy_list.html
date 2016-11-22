@@ -104,16 +104,69 @@
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                     <h2>Blank Page</h2>   
-                        <h5>Welcome Jhon Deo , Love to see you back. </h5>
-                       
+                     <h2>لیست خرید</h2>   
+                        <h5>در جدول پایین شما میتوانید لیست خرید را مشاهده کنید.</h5>   
                     </div>
                 </div>
                  <!-- /. ROW  -->
                  <hr />
-
-                
-
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Advanced Tables -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                             لیست خرید
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th>کد</th>
+                                            <th>تاریخ</th>
+                                            <th>نام مشتری</th>
+                                            <th>درایور (راننده)</th>
+                                            <th>ترانزیت (نمبر موتر)</th>
+                                            <th>ناحیه بارگیری</th>
+                                            <th>ناحیه تخلیه</th>
+                                            <th>نوع تیل</th>
+                                            <th>فی</th>
+                                            <th>وزن سمیر</th>
+                                            <th>وزن تخلیه</th>
+                                            <th>اضافه بار</th>
+                                            <th>مبلغ (تومان)</th>
+                                            <th>شرح و تفصیلات</th>
+                                            <th>تغییرات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd gradeX">
+                                            <td>Trident</td>
+                                            <td>Internet Explorer 4.0</td>
+                                            <td>Win 95+</td>
+                                            <td class="center">4</td>
+                                            <td class="center">X</td>
+                                            <td class="center">4</td>
+                                            <td class="center">X</td>
+                                            <td class="center">4</td>
+                                            <td class="center">X</td>
+                                            <td class="center">4</td>
+                                            <td class="center">X</td>
+                                            <td class="center">4</td>
+                                            <td class="center">X</td>
+                                            <td class="center">4</td>
+                                            <td class="center">X</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--End Advanced Tables -->
+                    </div>
+                </div>
+                 <!-- /. ROW  -->
             </div>
              <!-- /. PAGE INNER  -->
         </div>
@@ -127,8 +180,17 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- METISMENU SCRIPTS -->
     <script src="assets/js/jquery.metisMenu.js"></script>
-      <!-- CUSTOM SCRIPTS -->
+     <!-- DATA TABLE SCRIPTS -->
+    <script src="assets/js/dataTables/jquery.dataTables.js"></script>
+    <script src="assets/js/dataTables/dataTables.bootstrap.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#dataTables-example').dataTable();
+            });
+    </script>
+     <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
+    
     
    
 </body>
