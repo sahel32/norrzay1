@@ -122,7 +122,6 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                             <div class="row">
                                 <div class="col-md-12">
                                     <form role="form">
-
                                         <div class="col-md-3 form-group">
                                             <label>تاریخ پیش خرید</label>
                                             <input class="form-control" />
@@ -133,7 +132,13 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                                         </div>
                                         <div class="col-md-3 form-group">
                                             <label>نام مشتری</label>
-                                            <input class="form-control" />
+                                            <a href="#new-customer" data-toggle="modal">
+                                                <i class="fa fa-plus-circle" data-toggle="tooltip" title="ثبت مشتری جدید" data-placement="top"></i>
+                                            </a>
+                                            <select class="form-control">
+                                                <option>کاظم</option>
+                                                <option>مرتضی</option>
+                                            </select>
                                         </div>
                                         <div class="col-md-3 form-group">
                                             <label>نوع تیل</label>
@@ -180,6 +185,37 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
          <!-- /. PAGE WRAPPER  -->
     </div>
      <!-- /. WRAPPER  -->
+     <!-- Start Modal of customer -->
+        <div id="new-customer" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3 class="modal-title">ثبت مشتری جدید</h3>
+                    </div>
+                    <div class="modal-body clearfix">
+                        <form role="form">
+                            <div class="col-md-3 form-group">
+                                <label>نام</label>
+                                <input class="form-control" />
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label>تخلص</label>
+                                <input class="form-control" />
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label>شماره تماس</label>
+                                <input class="form-control" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" data-dismiss="modal">تائید</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     <!-- End Modal of customer -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
     <script src="assets/js/jquery-1.10.2.js"></script>
@@ -189,6 +225,9 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
     <script src="assets/js/jquery.metisMenu.js"></script>
       <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
+    <script>
+    	$("i").tooltip();
+    </script>
     
    
 </body>

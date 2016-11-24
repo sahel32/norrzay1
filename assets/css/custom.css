@@ -407,7 +407,10 @@ line-height: 1.428571429;
    .navbar {
  border-radius: 0px; 
 }
-   
+
+    body .modal-resize{
+        width: 1200px;
+    }
 }
 
 /*Add more styles by Mortaza*/
@@ -443,20 +446,25 @@ label{
 .correct{
     padding: 1px 10px;
 }
-.btn-correct{
-    padding: 0px 5px 0px 5px;
-    font-weight: bold;
-    line-height: 1.42857143;
-    font-size:14px;
-    color: #333;
+.glyphicon-trash{
+    color: #f90c05;
 }
-.btn-correct, .btn-correct:hover, .btn-correct:active, .btn-correct:focus{
-    border: none;
-    background: #fff;
-    box-shadow: none;
+.glyphicon-edit{
+    color: #18c318;
 }
-.btn-correct.open .dropdown-toggle{
-    box-shadow: none;
-    background: none;
-    border: none;
+.glyphicon-cog{
+    color: rgb(9, 87, 241);
+}
+.glyphicon-user{
+    color: rgb(43, 62, 81);
+}
+.panel-footer{
+    padding: 10px 15px 30px 15px;
+}
+.fa-plus-circle{
+    padding-right: 5px;
+    color: green;
+}
+.align{
+    text-align: center;
 }

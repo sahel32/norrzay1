@@ -122,7 +122,6 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                             <div class="row">
                                 <div class="col-md-12">
                                     <form role="form">
-
                                         <div class="col-md-3 form-group">
                                             <label>تاریخ</label>
                                             <input class="form-control" />
@@ -131,26 +130,15 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                                             <label>فروشنده دست اول</label>
                                             <input class="form-control" />
                                         </div>
-                                        <div class="col-md-3 form-group"> 
-                                            <div class="btn-group btn-correct">
-                                                <button type="button" class="btn-correct btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
-                                                    <label>درایور (راننده)</label>
-                                                </button>
-                                                <ul class="dropdown-menu slidedown">
-                                                    <li>
-                                                        <a href="#driver" data-toggle="modal">
-                                                            <i class="fa fa-sign-out fa-fw"></i>جدید
-                                                        </a>
-                                                    </li>
-                                                     <li class="divider"></li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="fa fa-refresh fa-fw"></i>مرتضی
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                             </div>
-                                            <input class="form-control" />
+                                        <div class="col-md-3 form-group">
+                                            <label>درایور (راننده)</label>
+                                            <a href="#new-driver" data-toggle="modal">
+                                                <i class="fa fa-plus-circle" data-toggle="tooltip" title="ثبت درایور جدید" data-placement="top"></i>
+                                            </a>
+                                            <select class="form-control">
+                                                <option>کاظم</option>
+                                                <option>مرتضی</option>
+                                            </select>
                                         </div>
                                         <div class="col-md-3 form-group">
                                             <label>ترانزیت (نمبر موتر)</label>
@@ -203,15 +191,16 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
          <!-- /. PAGE WRAPPER  -->
     </div>
      <!-- /. WRAPPER  -->
-     <!-- Start Modal -->
-        <div id="driver" class="modal fade" tabindex="-1">
+
+         <!-- Start Modal driver -->
+        <div id="new-driver" class="modal fade" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
                         <h3 class="modal-title">ثبت درایور (راننده) جدید</h3>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body clearfix">
                         <form role="form">
                             <div class="col-md-3 form-group">
                                 <label>نام</label>
@@ -228,12 +217,12 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-primary" data-dismiss="modal">تائید</button>
+                        <button class="btn btn-success" data-dismiss="modal">تائید</button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End Modal -->
+         <!-- End Modal driver -->
 
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
@@ -247,6 +236,7 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
     <script src="assets/js/custom.js"></script>
     <script>
         $("textarea").tooltip();
+        $("i").tooltip();
     </script>
     
    
