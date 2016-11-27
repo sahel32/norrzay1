@@ -105,62 +105,60 @@
                 <div class="row">
                     <div class="col-md-12">
                      <h2>لیست خرید</h2>   
-                        <h5>در جدول پایین شما میتوانید لیست خرید را مشاهده کنید.</h5>   
+                        <h5>در جدول پایین شما میتوانید لیست خرید را مشاهده کنید.
+                            <button class="btn btn-default pull-left"><i class="glyphicon glyphicon-print"></i></button>
+                        </h5>   
                     </div>
                 </div>
                  <!-- /. ROW  -->
                  <hr />
                 <div class="row">
                     <div class="col-md-12">
-                        <!-- Advanced Tables -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
                              لیست خرید
-                        </div>
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
-                                    <thead>
-                                        <tr>
-                                            <th>کد</th>
-                                            <th>تاریخ</th>
-                                            <th>نام مشتری</th>
-                                            <th>درایور (راننده)</th>
-                                            <th>ترانزیت (نمبر موتر)</th>
-                                            <th>ناحیه بارگیری</th>
-                                            <th>ناحیه تخلیه</th>
-                                            <th>نوع تیل</th>
-                                            <th>فی</th>
-                                            <th>وزن سمیر</th>
-                                            <th>وزن تخلیه</th>
-                                            <th>اضافه بار</th>
-                                            <th>مبلغ (تومان)</th>
-                                            <th>شرح و تفصیلات</th>
-                                            <th>تغییرات</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="odd gradeX">
-                                            <td>Trident</td>
-                                            <td>Internet Explorer 4.0</td>
-                                            <td>Win 95+</td>
-                                            <td class="center">4</td>
-                                            <td class="center">X</td>
-                                            <td class="center">4</td>
-                                            <td class="center">X</td>
-                                            <td class="center">4</td>
-                                            <td class="center">X</td>
-                                            <td class="center">4</td>
-                                            <td class="center">X</td>
-                                            <td class="center">4</td>
-                                            <td class="center">X</td>
-                                            <td class="center">4</td>
-                                            <td class="center">X</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
                             </div>
-                            
+                             <!-- Advanced Tables -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                        <thead>
+                                            <tr>
+                                                <th>تاریخ</th>
+                                                <th>نام مشتری</th>
+                                                <th>ناحیه تخلیه</th>
+                                                <th>نوع تیل</th>
+                                                <th>فی</th>
+                                                <th>وزن سمیر</th>
+                                                <th>وزن تخلیه</th>
+                                                <th>تغییرات</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="odd gradeX">
+                                                <td>Trident</td>
+                                                <td>Internet Explorer 4.0</td>
+                                                <td>Win 95+</td>
+                                                <td class="center">4</td>
+                                                <td class="center">X</td>
+                                                <td class="center">4</td>
+                                                <td class="center">X</td>
+                                                <td class="center align">
+                                                    <a href="#delete-buy" data-toggle="modal">
+                                                        <span class="glyphicon glyphicon-trash" data-toggle="tooltip" title="حذف" data-placement="top">
+                                                    </a>
+                                                    <a href="#edit-buy" data-toggle="modal"><span class="glyphicon glyphicon-edit" data-toggle="tooltip" title="ویرایش" data-placement="top"></span></a>
+                                                    <!-- <a href="buyer_seller_profile.html"><span class="glyphicon glyphicon-cog" data-toggle="tooltip" title="مشاهده پروفایل" data-placement="top"></span></a> -->
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                            </div>
+                            <div class="panel-heading panel-footer">
+                                <a href="#more-info" data-toggle="modal" class="pull-left">اطلاعات بیشتر</a>
+                            </div>
                         </div>
                     </div>
                     <!--End Advanced Tables -->
@@ -173,6 +171,198 @@
          <!-- /. PAGE WRAPPER  -->
     </div>
      <!-- /. WRAPPER  -->
+
+         <!-- Start Modal of delete buy -->
+        <div id="delete-buy" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3 class="modal-title">حذف خرید</h3>
+                    </div>
+                    <div class="modal-body">
+                        <h4>آیا شما مطمئن هستید؟</h4>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger">تائید</button>
+                        <button class="btn btn-primary" data-dismiss="modal">لغو</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- End Modal of delete buy -->
+         <!-- Start Modal of edit buy -->
+        <div id="edit-buy" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3 class="modal-title">ویرایش خرید</h3>
+                    </div>
+                    <div class="modal-body clearfix">
+                        <form role="form">
+                            <div class="col-md-3 form-group">
+                                <label>تاریخ</label>
+                                <input class="form-control" />
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label>فروشنده دست اول</label>
+                                <input class="form-control" />
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label>درایور (راننده)</label>
+                                <a href="#new-driver" data-toggle="modal">
+                                    <i class="fa fa-plus-circle" data-toggle="tooltip" title="ثبت درایور جدید" data-placement="top"></i>
+                                </a>
+                                <select class="form-control">
+                                    <option>کاظم</option>
+                                    <option>مرتضی</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label>ترانزیت (نمبر موتر)</label>
+                                <input class="form-control" />
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label>سمیر (آیدی بارنامه)</label>
+                                <input class="form-control" />
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label>تناژ (وزن سمیر)</label>
+                                <input class="form-control" />
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label>وزن تخلیه</label>
+                                <input class="form-control" />
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label>اضافه بار</label>
+                                <input class="form-control" />
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label>مبلغ اضافه بار</label>
+                                <input class="form-control" />
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label>ناحیه بارگیری</label>
+                                <input class="form-control" />
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label>ناحیه تخلیه</label>
+                                <input class="form-control" />
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label>شرح و تفصیلات</label>
+                                <textarea class="form-control" rows="1" data-toggle="tooltip" title="نکات بیشتر را میتوانید در این قسمت ذکر کنید." data-placement="top"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success">تائید</button>
+                        <button class="btn btn-primary" data-dismiss="modal">لغو</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- End Modal of edit buy -->
+         <!-- Start Modal of driver -->
+        <div id="new-driver" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3 class="modal-title">ثبت درایور (راننده) جدید</h3>
+                    </div>
+                    <div class="modal-body clearfix">
+                        <form role="form">
+                            <div class="col-md-3 form-group">
+                                <label>نام</label>
+                                <input class="form-control" />
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label>تخلص</label>
+                                <input class="form-control" />
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label>شماره تماس</label>
+                                <input class="form-control" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">تائید</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- End Modal of driver -->
+         <!-- Start Modal More Info -->
+        <div id="more-info" class="modal fade" tabindex="-1">
+            <div class="modal-dialog modal-resize">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3 class="modal-title">لیست خرید با جزئیات</h3>
+                    </div>
+                    <div class="modal-body">
+                         <!-- Advanced Tables -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                        <thead>
+                                            <tr>
+                                                <th>کد</th>
+                                                <th>تاریخ</th>
+                                                <th>نام مشتری</th>
+                                                <th>درایور (راننده)</th>
+                                                <th>ترانزیت (نمبر موتر)</th>
+                                                <th>ناحیه بارگیری</th>
+                                                <th>ناحیه تخلیه</th>
+                                                <th>نوع تیل</th>
+                                                <th>فی</th>
+                                                <th>وزن سمیر</th>
+                                                <th>وزن تخلیه</th>
+                                                <th>اضافه بار</th>
+                                                <th>مبلغ (تومان)</th>
+                                                <th>شرح و تفصیلات</th>
+                                                <th>تغییرات</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="odd gradeX">
+                                                <td>Trident</td>
+                                                <td>Internet Explorer 4.0</td>
+                                                <td>Win 95+</td>
+                                                <td class="center">4</td>
+                                                <td class="center">X</td>
+                                                <td class="center">4</td>
+                                                <td class="center">X</td>
+                                                <td class="center">4</td>
+                                                <td class="center">X</td>
+                                                <td class="center">4</td>
+                                                <td class="center">X</td>
+                                                <td class="center">4</td>
+                                                <td class="center">X</td>
+                                                <td class="center">4</td>
+                                                <td class="center">X</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                            </div>
+                         <!--End Advanced Tables -->
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default"><i class="glyphicon glyphicon-print"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- End Modal More Info -->
+
+
+
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
     <script src="assets/js/jquery-1.10.2.js"></script>
@@ -190,6 +380,9 @@
     </script>
      <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
+     <script>
+        $("span").tooltip();
+    </script>
     
     
    
