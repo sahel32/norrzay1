@@ -468,3 +468,48 @@ label{
 .align{
     text-align: center;
 }
+
+
+/*......Printing Styles.....*/
+
+.fix-page-wrapper{
+    margin: 0 !important;
+    
+    background: #fff !important;
+}
+
+@media print {
+    #page-wrapper{
+        margin: 0px;
+    }
+    .table-responsive{
+        border: none !important;
+        overflow: hidden;
+    }
+    .fix-table-style>thead>tr>th{
+        border: none !important;
+        font-size: 15px !important;
+        letter-spacing: 1px;
+    }
+    .fix-border{
+        border-top: 2px solid #333 !important;
+    }
+    #header{
+        padding-top: 30px;
+        position: fixed;
+        top: 0;
+    }
+    #footer{
+        padding-bottom: 30px;
+        padding-right: 30px;
+        position: fixed;
+        bottom: 0;
+    }
+
+}
+
+@media screen {
+  #footer, #header {
+    display: none;
+  }
+}
